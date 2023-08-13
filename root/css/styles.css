@@ -6,7 +6,7 @@
     list-style: none;
     font-family: Graphit, sans-serif;
    font-weight: 300;
-   letter-spacing: 1px;
+   letter-spacing: 2px;
 }
 :root{
     --orange:#ee7f24;
@@ -78,7 +78,7 @@ body{
     justify-content: center;
     text-align: center;
     text-decoration: none;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     height: 100%;
 }
 
@@ -150,6 +150,18 @@ body{
     #mobile__menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
      }
+     .header__text{   
+    text-align: center;
+    margin-top: 40%;
+    transition: all 0.5s ease-in-out;
+     }
+     .sub__about__me__text-1{
+        width: 300%;
+        padding: 4%;
+        display: flex;
+        text-align: left;
+       
+     }
     
 }
 header{
@@ -176,19 +188,47 @@ header{
 }
 #header__h1{
     font-size: 4em;
+    font-weight: 700;
     
 }
 #header__h2{
     font-size: 2em;
 }
-#about__me__h2{
-    font-size: 1.6em;
-    font-weight: 100;
-    color: var(--orange);
-}
-.about__me__container{
+
+.sub__about{
     margin-top: 1%;
-    display: flex;
     text-align: center;
-    padding: 0 45%;
+    padding: 6% auto;
+    margin-left: 10%;
+}
+.sub__about__container{
+ display: flex;
+ 
+}
+.sub__about__me__text-1{
+    padding: 4%;
+    display: flex;
+    text-align: left;
+    width: 60%;
+    
+}
+ .divi__line{
+    height: 120px;
+    width: 5px;
+    background: #fff;
+    margin: auto 5px;
+    padding: 2px;
+    background: var(--orange);
+
+}
+.text{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+   
+}
+.text__p-1{
+    text-align: left;
+  
+   word-wrap: break-word;
 }
