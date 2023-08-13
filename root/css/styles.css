@@ -4,7 +4,7 @@
     box-sizing:border-box;
     text-decoration: none;
     list-style: none;
-    font-family: Graphit, sans-serif;
+    font-family: 'Graphit', sans-serif;
    font-weight: 300;
    letter-spacing: 2px;
 }
@@ -14,7 +14,8 @@
 }
 @font-face {
     font-family: Graphit;
-    src: url('Graphit-Black.otf');
+    src: url('Graphit-Lightitalic.otf');
+    font-weight: 100;
 }
 @font-face {
     font-family: Graphit-italic;
@@ -155,14 +156,7 @@ body{
     margin-top: 40%;
     transition: all 0.5s ease-in-out;
      }
-     .sub__about__me__text-1{
-        width: 300%;
-        padding: 4%;
-        display: flex;
-        text-align: left;
-       
-     }
-    
+     
 }
 header{
     min-height: 100vh;
@@ -195,40 +189,40 @@ header{
     font-size: 2em;
 }
 
-.sub__about{
-    margin-top: 1%;
-    text-align: center;
-    padding: 6% auto;
-    margin-left: 10%;
-}
-.sub__about__container{
- display: flex;
- 
-}
-.sub__about__me__text-1{
-    padding: 4%;
+.about__me__section{
     display: flex;
-    text-align: left;
-    width: 60%;
-    
-}
- .divi__line{
-    height: 120px;
-    width: 5px;
-    background: #fff;
-    margin: auto 5px;
-    padding: 2px;
-    background: var(--orange);
-
-}
-.text{
-    font-size: 2rem;
-    font-weight: 500;
-    text-align: center;
    
+    padding: 10%;
 }
-.text__p-1{
-    text-align: left;
-  
-   word-wrap: break-word;
+.about__me__section__container{
+    display: flex;
+    width: 100%;
+}
+.about__me__section__h2{
+    flex-basis: 20%;
+    font-size: 2rem;
+    margin-left: 28%;
+}
+.my__color{
+    color: var(--orange);
+}
+.about__me__section__p{ 
+    width: 290px;
+    font-weight: 100;
+    word-wrap: break-word;
+}
+@media screen and (max-width:950px) {
+    .about__me__section__container{
+        display:block;
+     }
+     .about__me__section{
+        display: block;
+     }
+     .about__me__section__h2{
+        padding: 2.5%;
+     }
+     .about__me__section__p{
+       margin-left: 13.5%;
+     }
+    
 }
