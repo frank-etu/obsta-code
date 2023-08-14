@@ -202,6 +202,7 @@ header{
     flex-basis: 20%;
     font-size: 2rem;
     margin-left: 28%;
+    
 }
 .my__color{
     color: var(--orange);
@@ -210,6 +211,7 @@ header{
     width:350px;
     font-weight: 100;
     word-wrap: break-word;
+   
 }
 @media screen and (max-width:950px) {
     .about__me__section__container{
@@ -265,5 +267,36 @@ header{
     color: var(--orange);
     font-weight: 500;
     margin-right: 2%;
+}
+.service__section__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    padding-bottom:60px ;
+}
+.service__section__list .service__section__list__img{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+   
+}
+.img__info {
+    text-align: left;
+    color:#fff;
+    margin-left: 2%;
+    max-width: 100%;
+    font-size: 1em sans-serif; 
+    font-weight: 100;
+}
+@media  screen and (max-width:950px) {
+    .service__section__list .service__section__list__img{
+        width: 90%;
+    }
+    .img__info{
+        margin-left:6% ;
+    }
     
 }
