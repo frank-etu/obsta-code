@@ -1,13 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "../.."
-		},
-		{
-			"path": "../../../tailwind"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "obsta-code"
-	}
+    "folders": [
+        {
+            "path": "../.."
+        }
+    ]
 }
