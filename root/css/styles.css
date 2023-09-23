@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -7,12 +6,10 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Encode Sans', sans-serif;
-   font-weight: 300;
-   letter-spacing: 2px;
+    font-weight: 300;
+    letter-spacing: 2px;
     scroll-behavior: smooth;
-}
-
-  
+} 
 :root{
     --orange:#ee7f24;
     --black:#000000;
@@ -23,6 +20,7 @@ body{
     color: #fff;
 }
 
+  /*navbar section*/
 .navbar{
     background-color: none;
     height: 80px;
@@ -32,8 +30,7 @@ body{
     position: sticky;
     font-size: 1.2rem;
     top: 0;
-    z-index: 999;
-    
+    z-index: 999;   
 }
 .navbar__container{
     background-color: none;
@@ -51,24 +48,19 @@ body{
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 2rem;
-    
-  
+    font-size: 2rem;  
 }
 #logo{
     color: #fff;
- 
 }
 .navbar__menu{
     display: flex;
     align-items: center;
-    text-align: center;
-    
+    text-align: center;    
 }
 .navbar__item{
     padding: 1rem;
-    height: 80px;
-    
+    height: 80px;  
 }
 .navbar__links{
     color: #fff;
@@ -79,7 +71,6 @@ body{
     padding: 0 0.5rem;
     height: 100%;
 }
-
 @media screen and (max-width:950px) {
     .navbar__container{
         display: flex;
@@ -147,10 +138,10 @@ body{
     }
     #mobile__menu.is-active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
-     }
-    
-     
+     }   
 }
+
+ /* header section for landing page*/
 header{
     min-height: 100vh;
     height: 100%;
@@ -168,16 +159,11 @@ header{
     color: #fff;
 }
 .header__text{
-   
-    text-align: left;
     margin-top: 18%;
-    transition: all 0.5s ease-in-out;
     margin-left: 5%;
 }
-#header__h1{
-    font-size: 4.5em;
-    font-weight: 700;
-    
+.header__h1{
+    font-size: 4.5em;   
 }
 #header__h2{
     font-size: 2.7em;
@@ -186,7 +172,7 @@ header{
     width: 16%;
      color: #fff;
      background: var(--black);
-     
+     transition: 0.4s;
      text-decoration: none;
      padding: 10px 3px;
      cursor: pointer;
@@ -220,17 +206,17 @@ header{
             padding: 10px 3px;
             cursor: pointer;
             display: flex;
-            justify-content: center;
+            align-items:flex-start;
             margin-top: 3%;
          }
 }
 
 
+
+
 /*about me section for landing page*/
 
 .about__me__section{
-    
-   
     padding: 12% 10%;
 }
 .about__me__section__container{
@@ -241,17 +227,14 @@ header{
 .about__me__section__h2{
     flex-basis: 20%;
     font-size: 2rem;
-    margin-left: 28%;
-    
+    margin-left: 28%;  
 }
 .my__color{
     color: #fff;
 }
 .about__me__section__p{ 
     width:350px;
-    font-weight: 100;
-    word-wrap: break-word;
-   
+    word-wrap: break-word; 
 }
 .hero__btn{
     width: 20%;
@@ -285,11 +268,8 @@ header{
      .about__me__section__p{
        margin-left: 15%;
        padding-bottom: 9%;
-     }
-    
+     }  
 }
-
-
 @media screen and (max-width:950px){
    .hero__btn{
     width: 50%;
@@ -331,16 +311,13 @@ header{
     justify-self: start;
 }
 .service__section__list .service__section__list__img{
-    width: 100%;
-  
+    width: 100%; 
 }
 .img__info {
     text-align: left;
     color:#fff;
     margin-left: 2%;
-    max-width: 100%;
-   
-  
+    max-width: 100%;  
 }
 @media  screen and (max-width:950px) {
     .service__section__list .service__section__list__img{
@@ -350,10 +327,9 @@ header{
         margin-left:8% ;
         text-align: left;
         color:#fff;
-  
-    max-width: 100%;
-    font-size: 1em ; 
-   font-family: 'Gill sans', sans-serif;
+        max-width: 100%;
+        font-size: 1em ; 
+        font-family: 'Gill sans', sans-serif;
 }
 .service__section__container{
     display: grid;
@@ -367,14 +343,14 @@ header{
     }
 .service__section{
     padding: 0 0 20% 0;
+}   
 }
 
-    /* features section for landing page*/
-}
+
+ /* features section for landing page*/
 .features{
     padding-bottom: 6%;
 }
-
 .features__h2{
     font-size: 1.6em;
     color: #fff;
@@ -387,7 +363,6 @@ header{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
     width: 90%;
-
 }
 .feature{
     width: 100%;
@@ -421,10 +396,108 @@ header{
     }
     .features{
         padding-bottom: 20%;
-    }
-    
-       
+    }   
     }
     .feature__icon{
         margin-right: 4%;
     }
+ 
+
+
+
+    /*projects section*/
+    .projects__section{
+      padding: 5% 0;
+      text-align: center;
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+    .project__board{
+        flex-basis: 32%;
+    }
+    .card__h2{
+      padding: 3%;
+    }
+    .hero__btn__2{
+       
+        color:var(--black);
+        background:white;
+        transition: 0.4s;
+        text-decoration: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .project__type img{
+        width: 30%;
+     height: 130%;
+        border-radius: 2%;
+    }
+    .project__type{
+        padding: 2%;
+        position: relative;
+        overflow: hidden;
+       
+    }
+    .project__text{
+        font-size: 0.9rem;
+        background: linear-gradient(rgba(0.2, 0.2, 0.2, 1));
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+       /* alternate service */
+    .service__offer{
+        padding: 1%;
+        text-align: left;
+    }
+    .offers__container{
+        display: flex;
+        margin-left: 13%;
+        font-size: 15px;
+        padding-bottom: 7%;
+    }
+    .offers__left__text{
+       width: 300px;
+       font-size: 1.3rem;
+    }
+    .offers__right__text{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        padding-left: 9%;
+    }
+    .offers__text{
+        width: 300px;
+        padding-top: 5%;
+        word-wrap: break-word;
+    }
+    .offers__h3{
+       padding-bottom: 2%;
+    }
+    .offers__text p{
+        font-size: 0.9rem;
+    }
+    @media screen and (max-width:950px){
+        .offers__container{
+            display: block;
+        }
+        .offers__left__text{
+            text-align: center;
+             width: 300px;
+             margin-left: 30px;
+            font-size: 1.5rem;
+            padding-bottom: 6%;
+        }
+        /* .offers__right__text{
+            text-align: center;
+        } */
+        .offers__text{
+            padding-bottom: 4%;
+            text-align: left;
+        }
+    }
+   

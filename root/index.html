@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="/root/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-
-    <title>Etu's portfolio site</title>
-    
+ <title>Etu's portfolio site</title>
+ 
 </head>
 <body>
     
@@ -37,15 +36,15 @@
             </div>
         </nav>
 
-
-         <div class="header__text">
-       <h1 id="header__h1">Hi!</h1> 
-       <h2 id="header__h2"> Welcome to Burrow -</h2>
-       <h3 class="header__h3">Where your dreams are built</h3>
+         <div class="header__text" data-aos="fade-right">
+          <h1 class="header__h1" data-aos="fade-right">Hi!</h1> 
+           <h2 id="header__h2"> Welcome to Burrow -</h2>
+          <h3 class="header__h3">Where dreams are built</h3>
        <a href="#rest" class="hero__btn__1">learn more</a>
-    </div>
+     </div>
     </header>
 
+       <!-- this is the about me section -->
 <section class="about__me__section" id="rest">
     <div class="about__me__section__container">
         <h2 class="about__me__section__h2">
@@ -62,21 +61,21 @@
          <a href="" class="hero__btn">learn more</a>
 </section>
 
-
-<section class="service__section">
-    <h2 class="service__section__h2">What i'll do for you</h2>
+<!-- this is the services section section -->
+<!-- <section class="service__section">
+    <h2 class="service__section__h2">What we'll do for you</h2>
  <div class="service__section__container">
 
     <div class="service__section__list">
         <img src="/root/images/mountain.jpg"  class="service__section__list__img">
-        <div class="img__info">
+        <div class="img__info" data-aos="fade-right">
         <h4> create your floor plan</h4>
         </div>
     </div>
 
     <div class="service__section__list">
         <img src="/root/images/pexels-max-rahubovskiy-7045304.jpg"  class="service__section__list__img">
-        <div class="img__info">
+        <div class="img__info" data-aos="fade-right">
             <h4>supervise your building- from block to finishes</h4>
         </div>
     </div>
@@ -86,21 +85,54 @@
         <div class="img__info">
           <h4>  Create your noise maps</h4>
         </div>
-      
     </div>
+
     <div class="service__section__list">
         <img src="/root/images/mountain.jpg"  class="service__section__list__img">
         <div class="img__info">
           <h4>  Create your noise maps</h4>
         </div>
+    </div>
+</section> -->
 
- </div>
+<section class="service__offer">
+    <div class="offers__container" >
+        <div class="offers__left__text" data-aos="fade-right">
+            <h2>What we'll do for you</h2>
+        </div>
 
+        <div class="offers__right__text" data-aos="fade-left">
+            <div class="offers__text" data-aos="fade-left">
+               
+                <h3 class="offers__h3">Create your building plans</h3>
+                <p>Lorem,  incidunt nihil dolor voluptas quos maxime e
+                    sse quae distinctio ut? Non autem dolo</p>
+                </div>
 
+                <div class="offers__text" data-aos="fade-left">
+                    <h3 class="offers__h3">Create your 3D's</h3>
+                    <p>Lorem,  incidunt nihil dolor voluptas quos maxime e
+                        sse quae distinctio ut? Non autem dolo</p>
+                    </div>
+
+                    <div class="offers__text" data-aos="fade-left">
+                <h3 class="offers__h3">Manage your projects</h3>
+                <p>Lorem,  incidunt nihil dolor voluptas quos maxime e
+                    sse quae distinctio ut? Non autem dolo</p>
+                </div>
+
+                <div class="offers__text" data-aos="fade-left">
+                    <h3 class="offers__h3">Create your noise maps</h3>
+                    <p>Lorem,  incidunt nihil dolor voluptas quos maxime e
+                        sse quae distinctio ut? Non autem dolo</p>
+                    </div>
+           
+        </div>
+    </div>
 </section>
 
-<section class="features">
-    <h2 class="features__h2">why people choose me</h2>
+<!-- <section class="features">
+    <h2 class="features__h2">why people choose us</h2>
  <div class="features__container">
     <div class="feature">
         <span class="feature__icon">➕20</span>
@@ -123,7 +155,31 @@
     </div>
  </div>
 
+</section> -->
+
+
+<!-- this is the projects section -->
+<section class="projects__section">
+        <h2 class="card__h2">Take a look at some of our projects</h2>
+
+        <div class="projects__board">
+            <div class="project__type">
+                <a href=""><img src="/root/images/h-2.jpg" alt="" ></a>
+                <div class="project__text">residential building project</div>
+            </div>
+        </div>
+        <a href="" class="hero__btn__2">learn more</a>
+    </div>
+
+ 
 </section>
-    <script src="/root/scripts/app.js"></script>
+
+
+
+<script src="/root/scripts/app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
